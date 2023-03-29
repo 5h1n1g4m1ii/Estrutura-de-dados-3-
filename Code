@@ -195,6 +195,37 @@ public class Primo {
 }
 
 471,
+
+import java.util.Scanner;
+
+public class Divisibilidade {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite o número a ser verificado: ");
+        int numero = sc.nextInt();
+        System.out.print("Digite o número pelo qual se deseja verificar a divisibilidade: ");
+        int divisor = sc.nextInt();
+
+        int quantidadeDivisoes = vrfd(numero, divisor);
+
+        System.out.println(numero + " é divisível por " + divisor + " " + quantidadeDivisoes + " vezes.");
+
+        sc.close();
+    }
+
+    public static int vrfd(int numero, int divisor) {
+        int quantidadeDivisoes = 0;
+
+        while (numero % divisor == 0) {
+            quantidadeDivisoes++;
+            numero /= divisor;
+        }
+
+        return quantidadeDivisoes;
+    }
+}
+
 473,
 480,
 481,
