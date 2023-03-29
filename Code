@@ -73,6 +73,23 @@ public class CGR {
 }
 
 464,
+
+import java.lang.Math;
+
+public class crg {
+    public static void main(String[] args) {
+        double radianos = Math.PI / 4;
+        double graus = CRG(radianos);
+
+        System.out.println(radianos + " radianos equivalem a " + graus + " graus.");
+    }
+
+    public static double CRG(double radianos) {
+        double graus = (radianos * 180) / Math.PI;
+        return graus;
+    }
+}
+
 465,
 467,
 470,
