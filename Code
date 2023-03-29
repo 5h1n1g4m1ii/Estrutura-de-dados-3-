@@ -427,6 +427,29 @@ public class SubstituiCaractere {
 }
 
 493, 
+
+public static String verificarOrdenacao(int[] vetor) {
+    boolean crescente = true;
+    boolean decrescente = true;
+    
+    for (int i = 1; i < vetor.length; i++) {
+        if (vetor[i] < vetor[i-1]) {
+            crescente = false;
+        }
+        if (vetor[i] > vetor[i-1]) {
+            decrescente = false;
+        }
+    }
+    
+    if (crescente) {
+        return "O vetor está ordenado de forma crescente";
+    } else if (decrescente) {
+        return "O vetor está ordenado de forma decrescente";
+    } else {
+        return "O vetor não está ordenado";
+    }
+}
+
 494,
 495,
 497,
