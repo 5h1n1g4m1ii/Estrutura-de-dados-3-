@@ -28,8 +28,50 @@ public class Dobro {
 
 462,
 
+import java.util.Scanner;
+
+public class Media {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite a nota da primeira prova: ");
+        double nota1 = sc.nextDouble();
+        System.out.print("Digite a nota da segunda prova: ");
+        double nota2 = sc.nextDouble();
+        System.out.print("Digite a nota da terceira prova: ");
+        double nota3 = sc.nextDouble();
+
+        double media = calcularMedia(nota1, nota2, nota3);
+
+        System.out.println("A média das notas é: " + media);
+
+        sc.close();
+    }
+
+    public static double calcularMedia(double nota1, double nota2, double nota3) {
+        double media = (nota1 + nota2 + nota3) / 3;
+        return media;
+    }
+}
 
 463,
+
+import java.lang.Math;
+
+public class CGR {
+    public static void main(String[] args) {
+        double graus = 360;
+        double radianos = CGR(graus);
+
+        System.out.println(graus + " graus equivalem a " + radianos + " radianos.");
+    }
+
+    public static double CGR(double graus) {
+        double radianos = (graus * Math.PI) / 180;
+        return radianos;
+    }
+}
+
 464,
 465,
 467,
