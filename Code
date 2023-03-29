@@ -257,7 +257,73 @@ public class VerificaVogalConsoante {
 }
 
 480,
+
+import java.util.Scanner;
+
+public class Capicua {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite um número inteiro: ");
+        int numero = sc.nextInt();
+
+        if (veri) {
+            System.out.println(numero + " é um número capicua.");
+        } else {
+            System.out.println(numero + " não é um número capicua.");
+        }
+
+        sc.close();
+    }
+
+    public static boolean veri(int numero) {
+        int resto, inverso = 0, aux = numero;
+
+        while (aux > 0) {
+            resto = aux % 10;
+            inverso = inverso * 10 + resto;
+            aux /= 10;
+        }
+
+        return numero == inverso;
+    }
+}
+
 481,
+
+import java.util.Scanner;
+
+public class Cvs {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite o número na base 10: ");
+        int numero = sc.nextInt();
+
+        System.out.print("Digite a base de destino (2 a 10): ");
+        int base = sc.nextInt();
+
+        String resultado = cvtb(numero, base);
+
+        System.out.println("O número " + numero + " na base " + base + " é: " + resultado);
+
+        sc.close();
+    }
+
+    public static String cvtb(int numero, int base) {
+        String resultado = "";
+        int quociente = numero;
+
+        while (quociente > 0) {
+            int resto = quociente % base;
+            resultado = resto + resultado;
+            quociente = quociente / base;
+        }
+
+        return resultado;
+    }
+}
+
 483,
 485,
 487,
