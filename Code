@@ -227,6 +227,35 @@ public class Divisibilidade {
 }
 
 473,
+
+import java.util.Scanner;
+
+public class VerificaVogalConsoante {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite um caractere: ");
+        char caractere = sc.next().charAt(0);
+
+        if (verificarVogalConsoante(caractere) == 1) {
+            System.out.println(caractere + " é uma consoante.");
+        } else {
+            System.out.println(caractere + " é uma vogal.");
+        }
+
+        sc.close();
+    }
+
+    public static int verificarVogalConsoante(char caractere) {
+        if (caractere == 'a' || caractere == 'e' || caractere == 'i' || caractere == 'o' || caractere == 'u' ||
+            caractere == 'A' || caractere == 'E' || caractere == 'I' || caractere == 'O' || caractere == 'U') {
+            return 0;
+        } else {
+            return 1;
+        }
+    }
+}
+
 480,
 481,
 483,
