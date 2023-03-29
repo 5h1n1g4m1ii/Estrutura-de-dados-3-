@@ -486,6 +486,24 @@ public static void main(String[] args) {
 
 497,
 
+public static int buscaBinaria(int[] vetor, int chave) {
+    int inicio = 0;
+    int fim = vetor.length - 1;
+    int meio;
 
+    while (inicio <= fim) {
+        meio = (inicio + fim) / 2;
+
+        if (vetor[meio] == chave) {
+            return meio; // chave encontrada
+        } else if (vetor[meio] < chave) {
+            inicio = meio + 1; // busca na metade direita do vetor
+        } else {
+            fim = meio - 1; // busca na metade esquerda do vetor
+        }
+    }
+
+    return -1; // chave não encontrada
+}
 
 499
