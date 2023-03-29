@@ -91,6 +91,40 @@ public class crg {
 }
 
 465,
+
+import java.util.Scanner;
+
+public class Maior {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite o primeiro número: ");
+        double numero1 = sc.nextDouble();
+        System.out.print("Digite o segundo número: ");
+        double numero2 = sc.nextDouble();
+        System.out.print("Digite o terceiro número: ");
+        double numero3 = sc.nextDouble();
+
+        resultado(numero1, numero2, numero3);
+
+        sc.close();
+    }
+
+    public static void resultado(double numero1, double numero2, double numero3) {
+        double maior = numero1;
+
+        if (numero2 > maior) {
+            maior = numero2;
+        }
+
+        if (numero3 > maior) {
+            maior = numero3;
+        }
+
+        System.out.println("O maior número é: " + maior);
+    }
+}
+
 467,
 470,
 471,
