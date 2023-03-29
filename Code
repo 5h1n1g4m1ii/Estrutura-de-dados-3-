@@ -395,6 +395,37 @@ public class InverteVTR {
 }
 
 490
+
+public class SubstituiCaractere {
+
+    public static void main(String[] args) {
+        char[] vetor = {'escola', 'sacada', 'algoritimos', 'festa', 'escada'};
+        int tamanho = 100;
+        char caractere = 'c';
+
+        int totalSubstituido = substituiCaractere(vetor, tamanho, caractere);
+
+        System.out.println("Total de caracteres substituídos: " + totalSubstituido);
+
+        for (int i = 0; i < tamanho; i++) {
+            System.out.print(vetor[i] + " ");
+        }
+    }
+
+    public static int substituiCaractere(char[] vetor, int tamanho, char caractere) {
+        int totalSubstituido = 0;
+
+        for (int i = 0; i < tamanho; i++) {
+            if (vetor[i] == caractere) {
+                vetor[i] = '*';
+                totalSubstituido++;
+            }
+        }
+
+        return totalSubstituido;
+    }
+}
+
 493, 
 494,
 495,
