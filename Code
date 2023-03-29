@@ -371,6 +371,29 @@ public class ImprimirCaracteres {
 }
 
 487,
+
+public class InverteVTR {
+
+    public static void main(String[] args) {
+        int[] vetor = {9, 6, 3, 1, 0};
+        int tamanho = 5;
+
+        inverte(vetor, tamanho);
+
+        for (int i = 0; i < tamanho; i++) {
+            System.out.print(vetor[i] + " ");
+        }
+    }
+
+    public static void inverte(int[] vetor, int tamanho) {
+        for (int i = 0; i < tamanho / 2; i++) {
+            int aux = vetor[i];
+            vetor[i] = vetor[tamanho - 1 - i];
+            vetor[tamanho - 1 - i] = aux;
+        }
+    }
+}
+
 490
 493, 
 494,
