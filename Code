@@ -470,5 +470,22 @@ public static void troca(int[] vetor, int i, int j) {
 }
 
 495,
+
+import java.util.Arrays;
+
+public class OrdenaCaracteres {
+    public static void ordenaVetor(char[] vetor) {
+        Arrays.sort(vetor);
+    }
+}
+public static void main(String[] args) {
+    char[] vetor = {'joao', 'anita', 'carlos'};
+    ordenaVetor(vetor);
+    System.out.println(Arrays.toString(vetor)); // saída: [a, b, c]
+}
+
 497,
+
+
+
 499
