@@ -1,0 +1,49 @@
+Exercícios: 
+460,
+
+import java.util.Scanner;
+
+public class Dobro {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite o primeiro número: ");
+        double num1 = sc.nextDouble();
+        System.out.print("Digite o segundo número: ");
+        double num2 = sc.nextDouble();
+        System.out.print("Digite o terceiro número: ");
+        double num3 = sc.nextDouble();
+
+        System.out.println("O dobro do primeiro é: " + calcularDobro(num1));
+        System.out.println("O dobro do segundo é: " + calcularDobro(num2));
+        System.out.println("O dobro do terceiro é: " + calcularDobro(num3));
+
+        sc.close();
+    }
+
+    public static double calcularDobro(double numero) {
+        return numero * 2;
+    }
+}
+
+462,
+
+
+463,
+464,
+465,
+467,
+470,
+471,
+473,
+480,
+481,
+483,
+485,
+487,
+490
+493, 
+494,
+495,
+497,
+499
