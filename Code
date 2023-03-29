@@ -325,6 +325,30 @@ public class Cvs {
 }
 
 483,
+
+public class PDI {
+
+    public static void main(String[] args) {
+        int[] vetorA = {6, 9, 0};
+        int[] vetorB = {9, 3, 6};
+        int n = 3;
+
+        int PI = CALPI(vetorA, vetorB, n);
+
+        System.out.println("O produto interno entre os vetores é: " + PI);
+    }
+
+    public static int CALPI(int[] vetorA, int[] vetorB, int n) {
+        int PI = 0;
+
+        for (int i = 0; i < n; i++) {
+            PI += vetorA[i] * vetorB[i];
+        }
+
+        return PI;
+    }
+}
+
 485,
 487,
 490
